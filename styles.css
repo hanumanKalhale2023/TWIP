@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background:linear-gradient(135deg, #3b0052, #9f0c9c, #ff00ff, #ff0aaf, #ff1a63) ;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.homeattr {
+    font-weight: bold;
+    margin-right: 100px;
+    font-size: large;
+}
+
+.faqattr {
+    font-weight: bold;
+    margin-right: 50px;
+
+}
+
+.contactattr {
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.AboutUs {
+    color: black;
+    font-weight: bold;
+    margin-right: 100px;
+}
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background:linear-gradient(135deg, #3b0052, #9f0c9c, #ff00ff, #ff0aaf, #ff1a63) ;
+    color: white;
+    text-align: left;
+    position: relative;
+    background-size: cover;
+}
+
+.webinar-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    width: 85%;
+  height: 100%;
+  background: linear-gradient(40deg, rgba(255, 0, 255, 0.2), rgba(0, 0, 255, 0.2));
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.content {
+    max-width: 600px;
+    animation: fadeInLeft 2s;
+}
+
+.strategyattr{
+    text-decoration: underline;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.speaker-info{
+    color : black;
+
+}
+.day_info {
+    color : black;
+}
+
+.description,
+.date-time {
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: white;
+    color: #2575fc;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more {
+    background-color: #333;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.image-container img {
+    width: 500px;
+    border-radius: 50px;
+    animation: fadeInRight 2s;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #2575fc;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#subscribeBtn {
+    background-color: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#subscribeBtn:hover {
+    background-color: #6a11cb;
+}
